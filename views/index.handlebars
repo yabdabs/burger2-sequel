@@ -1,0 +1,54 @@
+<div class= "container">
+	<div class="row">
+		<div class="col-xs-3 bod">
+
+			<div class="burgers">
+				<h3>Must East</h3>
+
+				<ul class="list-group">
+					{{#each burgs}}
+						{{#unless this.devoured}}
+
+							<form action="/{{this.id}}?_method=PUT" method="POST">
+			          	<input type="hidden" name="devour" value="true">
+			          	<li class= "list-group-item">
+			          		<button type="submit" class="list-group-item list-group-item-action btn-primary">{{this.burger_name}}</button>
+			          	</li>
+			       	</form>
+
+	 					{{/unless}}
+					{{/each}}
+	 			</ul>
+			</div>
+		</div>
+
+		<div class="col-xs-6 middle">
+			<h1>Eat Da Burger</h1>
+			<img src="images/B5.jpg" class="burgerImage">
+
+			<form action="/addBurger" method= "POST">
+				<div class="form-group">
+					<textarea class="input-lg" name="burgerInput"></textarea>
+				</div>
+
+				<button class="btn btn-default" type="submit">Submit</button>
+			</form>
+		</div>
+
+		<div class="col-xs-3 bod">
+			<div class="burgersEaten">
+			<h3>Already Eaten</h3>
+				<ul>
+					{{#each burgs}}
+						{{#if this.devoured}}
+							<li class= "list-group-item text">
+	          		<button type="submit" class="text list-group-item list-group-item-action disabled	 btn-primary">{{this.burger_name}}</button>
+		          </li>
+						{{/if}}
+					{{/each}}
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</div>
