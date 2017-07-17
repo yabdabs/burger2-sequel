@@ -15,10 +15,6 @@
   },
   "production": {
     "use_env_variable":"JawsDB_URL",
-    "dialect": "mysql",
-    "username": "root",
-    "password": null,
-    "database": "burger_sequel",
-    "host": "127.0.0.1"
+    "dialect": "mysql"
   }
 }
