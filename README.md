@@ -12,4 +12,4 @@ Follows the MVC design pattern and uses Node in conjunction with Sequelize to qu
 * Sequelize ORM
 * Handlebars
 
-![Alt Text](https://i.imgflip.com/1tu1gs.gif)
+![GIPH](https://zippy.gfycat.com/ChillyImpressionableChipmunk.gif)
