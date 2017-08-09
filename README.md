@@ -1,4 +1,4 @@
-# Project Title
+# Burger2-Sequelized
 
 Burger logger with Sequelize ORM, Node, Express, and Handlebars. This is a recreation of the burger hw using Sequelize ORM. 
 
